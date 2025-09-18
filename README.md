@@ -1,4 +1,9 @@
-# buzzline-04-case
+# P4: Analyzing and Visualizing Streaming Data (buzzline-04-anjana)
+### Name: Anjana Dhakal, 09/18/2025
+
+## Overview
+Read https://github.com/denisecase/buzzline-04-caseLinks to an external site.
+ 
 
 We can analyze and visualize different types of streaming data as the information arrives.
 
@@ -15,6 +20,15 @@ It generates three applications:
 
 All three applications produce live charts to illustrate the data.
 
+
+## Objective 
+
+1. Understand consumers that process JSON messages in real time.
+2. Create a new consumer for real-time insights.
+3. Select an interesting aspect to visualize. 
+4. Implement a streaming chart showing your real time insights (based on the matplotlib animation examples provided). 
+
+
 ## First, Use Tools from Module 1 and 2
 
 Before starting, ensure you have completed the setup tasks in <https://github.com/denisecase/buzzline-01-case> and <https://github.com/denisecase/buzzline-02-case> first.
@@ -24,7 +38,7 @@ Before starting, ensure you have completed the setup tasks in <https://github.co
 
 1. Once the tools are installed, copy/fork this project into your GitHub account
    and create your own version of this project to run and experiment with.
-2. Name it `buzzline-04-yourname` where yourname is something unique to you.
+2. Name it `buzzline-04-anjana` 
 
 Additional information about our standard professional Python project workflow is available at
 <https://github.com/denisecase/pro-analytics-01>.
@@ -215,6 +229,32 @@ For each one, you will need to:
    - Look in the producers folder for csv_producer_case.
    - Look in the consumers folder for csv_consumer_case.
 
+## Task 6. Custome Consumer Project
+
+For my custom consumer project I added two live charts:
+1. A Top 3 Authors Leaderboard that dynamically updates with the authors sending the most messages.
+2. A line chart tracking cumulative message length categories (Short / Medium / Long) over time, with different colors for each category.
+
+This application could be used for many business practices like:
+1. Monitoring the most active contributors in a discussion forum or social media feed.
+2. Tracking message or activity patterns over time (short vs. long posts) to identify engagement trends.
+3. Analyzing user activity for marketing, support, or website interactions.
+
+Commands are below:
+
+Windows:
+
+```shell
+.venv\Scripts\activate
+py -m producers.project_producer_case
+```
+
+Windows:
+
+```shell
+.venv\Scripts\activate
+py -m consumers.project_consumer_anjana
+```
 ### Review the Application Code
 
 Review the code for both the producer and the consumer.
@@ -290,3 +330,6 @@ Live Bar Chart (Kafka JSON streaming)
 Live Line Chart with Alert (Kafka CSV streaming)
 
 ![CSV (Kafka)](images/live_line_chart_example.jpg)
+
+Live Bar Chart and Line chart (project_json file streamming)
+![alt text](images/live.project_chart.jpg)
