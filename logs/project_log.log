@@ -347,3 +347,5 @@
 2025-09-18 12:34:49 | WARNING | Producer interrupted by user.
 2025-09-18 12:34:49 | INFO | Kafka producer closed.
 2025-09-18 12:34:49 | INFO | END producer.
+2025-09-18 12:34:52 | WARNING | Consumer interrupted by user.
+2025-09-18 12:34:52 | INFO | Kafka consumer for topic 'smoker_csv' closed.
